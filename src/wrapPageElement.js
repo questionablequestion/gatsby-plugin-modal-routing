@@ -57,7 +57,7 @@ class WrapPageElement extends React.Component {
 
   handleRequestClose = () => {
     navigate(
-      withoutPrefix(this.state.prevProps.location.pathname),
+      withoutPrefix([this.state.prevProps.location.pathname, this.state.prevProps.location.search].filter(x => x).join("")),
       {
         state: {
           noScroll: true
@@ -123,7 +123,7 @@ class WrapPageElement extends React.Component {
               <ModalRoutingContext.Provider
                 value={{
                   modal: true,
-                  closeTo: prevProps ? withoutPrefix(prevProps.location.pathname) : '/'
+                  closeTo: prevProps ? withoutPrefix([prevProps.location.pathname, prevProps.location.search].filter(x => x).join("")) : '/'
                 }}
               >
                 {modalElement}
