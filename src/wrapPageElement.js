@@ -28,7 +28,7 @@ class WrapPageElement extends React.Component {
 
   static getDerivedStateFromProps(props, state) {
     // TODO: handle history changes
-    if (props.location.pathname !== state.pathname) {
+    if (props.location.pathname !== state.pathname || props.location.search !== state.search) {
       return {
         pathname: props.location.pathname,
         props: props,
