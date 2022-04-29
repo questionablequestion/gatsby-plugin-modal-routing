@@ -2,7 +2,7 @@
   "name": "gatsby-plugin-modal-routing",
   "version": "1.2.1",
   "description": "Gatsby plugin to enable routing of modal pages",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir . --ignore **/__tests__",
     "watch": "babel -w src --out-dir . --ignore **/__tests__",
