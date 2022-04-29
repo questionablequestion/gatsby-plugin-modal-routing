@@ -18,10 +18,7 @@
   "license": "MIT",
   "homepage": "https://github.com/lsirivong/gatsby-plugin-modal-routing",
   "bugs": "https://github.com/lsirivong/gatsby-plugin-modal-routing/issues",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/questionablequestion/gatsby-plugin-modal-routing.git"
-  },
+  "repository": "questionablequestion/gatsby-plugin-modal-routing",
   "files": [
     "/*.js",
     "/lib"
