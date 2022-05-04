@@ -103,6 +103,7 @@ class WrapPageElement extends React.Component {
       modalElement = React.createElement(_.get(lastModalProps, 'pageResources.component'), {
         ...lastModalProps,
         key: _.get(lastModalProps, 'pageResources.page.path'),
+        isModalClosing: true
       })
     }
 
