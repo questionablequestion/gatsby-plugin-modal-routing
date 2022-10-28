@@ -86,8 +86,6 @@ class WrapPageElement extends React.Component {
 
         const resources = isModal ? prevProps.pageResources : pageResources;
 
-        console.log(prevProps, pageResources);
-
         // the page is the previous path if this is a modal, otherwise it's the current path
         const pageElement = isModal
             ? React.createElement(prevProps.pageResources.component.default, {
@@ -98,8 +96,6 @@ class WrapPageElement extends React.Component {
                   ...this.props,
                   key: pageResources.page.path,
               });
-
-        console.log(pageElement);
 
         let modalElement = null;
 
